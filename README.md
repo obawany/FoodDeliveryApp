@@ -17,4 +17,11 @@ Future Enhancements:
 - Creating a new API endpoint to display top 3 delivery men who earn the most commission in given time interval, and average commission as well.
 - Notifying Customer support team when a delivery is not done in 45 minutes. With a scheduled task to check and notify CS team asynchronously. (print a message at least)
 
+# Development Environment:
 
+Github for source/version control
+Gradle as the build too
+Java 8
+Postgresql for database
+Liquibase
+Using Inellij locally for development/debugging 
