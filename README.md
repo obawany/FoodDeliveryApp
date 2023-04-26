@@ -19,9 +19,9 @@ Future Enhancements:
 
 # Development Environment:
 
-Github for source/version control
-Gradle as the build too
-Java 8
-Postgresql for database
-Liquibase
-Using Inellij locally for development/debugging 
+- Github for source/version control
+- Gradle as the build too
+- Java 8
+- Postgresql for database
+- Liquibase
+- Using Inellij locally for development/debugging 
