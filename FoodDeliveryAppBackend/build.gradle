@@ -1,0 +1,45 @@
+buildscript {
+    ext {
+        springBootVersion = '2.2.10.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url "http://repo.spring.io/plugins-release" }
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath('com.github.ksoichiro:gradle-console-reporter:0.6.2')
+    }
+}
+
+apply plugin: 'java'
+apply plugin: "jacoco"
+apply plugin: "io.spring.dependency-management"
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'com.github.ksoichiro.console.reporter'
+
+group = 'com.FoodDeliveryAppBackend'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-data-rest')
+    compile('org.springframework.boot:spring-boot-starter-validation')
+    compile('com.fasterxml.jackson.datatype:jackson-datatype-jsr310')
+    compile('org.liquibase:liquibase-core')
+    runtime('org.springframework.boot:spring-boot-devtools')
+    runtime('org.postgresql:postgresql:42.3.1')
+    testCompile('com.h2database:h2')
+    testCompile('org.springframework.boot:spring-boot-starter-aop')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.mockito:mockito-core:2.28.2')
+}

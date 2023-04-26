@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  postgres:
+    container_name: fooddeliverybackend_db
+    image: postgres
+    restart: unless-stopped
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-obawany}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-encrypt_it-123}
+      POSTGRES_DB: ${POSTGRES_DB:-foodDeliveryAppBackend}
+      PGDATA: /data/postgres/foodDeliverytracker
+    networks:
+      - postgres
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+  postgres:
