@@ -1,11 +1,15 @@
+org/fooddeliveryapp/exceptions/GlobalExceptionHandler.java
+ org.fooddeliveryapp.exceptions.GlobalExceptionHandler
+org/fooddeliveryapp/FoodDeliveryAppBackend.java
+ org.fooddeliveryapp.FoodDeliveryAppBackend
 org/fooddeliveryapp/repositories/DeliveryRepository.java
  org.fooddeliveryapp.repositories.DeliveryRepository
 org/fooddeliveryapp/mdoel/Delivery.java
- org.fooddeliveryapp.mdoel.Delivery
+ org.fooddeliveryapp.model.Delivery
 org/fooddeliveryapp/repositories/PersonRepository.java
  org.fooddeliveryapp.repositories.PersonRepository
 org/fooddeliveryapp/mdoel/Person.java
- org.fooddeliveryapp.mdoel.Person
+ org.fooddeliveryapp.model.Person
 org/fooddeliveryapp/controller/PersonController.java
  org.fooddeliveryapp.controller.PersonController
 org/fooddeliveryapp/service/DeliveryServiceImpl.java
@@ -14,10 +18,6 @@ org/fooddeliveryapp/service/DeliveryService.java
  org.fooddeliveryapp.service.DeliveryService
 org/fooddeliveryapp/controller/DeliveryController.java
  org.fooddeliveryapp.controller.DeliveryController
-org/fooddeliveryapp/FoodDeliveryAppBackend.java
- org.fooddeliveryapp.FoodDeliveryAppBackend
-org/fooddeliveryapp/exceptions/GlobalExceptionHandler.java
- org.fooddeliveryapp.exceptions.GlobalExceptionHandler
 org/fooddeliveryapp/service/PersonServiceImpl.java
  org.fooddeliveryapp.service.PersonServiceImpl
 org/fooddeliveryapp/service/PersonService.java

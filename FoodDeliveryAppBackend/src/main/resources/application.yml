@@ -13,6 +13,6 @@ spring:
     change-log: classpath:/db/changelog/db.changelog-master.xml
 
 server:
-  port: 8081
+  port: 8082
   servlet:
     context-path: /api
