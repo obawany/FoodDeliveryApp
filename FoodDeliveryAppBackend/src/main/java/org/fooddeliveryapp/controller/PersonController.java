@@ -22,6 +22,7 @@ public class PersonController {
     @PostMapping(path = "/api/person")
     public ResponseEntity register(@RequestBody Person p) {
         // TODO: remove this from Controller after changing to ENUM, and return of this to ResponseEntity<Person>
+        // https://medium.com/javarevisited/an-effective-way-to-use-java-enums-in-your-spring-application-485c969794a8 (check!)
         if (!p.getPersonType().equals("DeliveryMan") && !p.getPersonType().equals("Customer")) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Invalid Person type, must be either Customer or DeliveryMan");
         }

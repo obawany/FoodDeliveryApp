@@ -1,22 +1,25 @@
 # FoodDeliveryApp
 
-API backend server code for a food delivery mobile application to call
+The FoodDeliveryApp is designed to facilitate a delivery service through a mobile application. 
 
-This is a delivery startup which allows its users to register as delivery men or customers.
-Customer gives an order from the online shop and delivery man picks the order and drives it to the customer.
-At the end of delivery, delivery man sends a request to the server with his/her id, customer id, order id, the distance in km and the start and end time of delivery.
+- Users can register as either delivery men or customers. 
+- Customers can place orders from online shops, and delivery men are responsible for picking up the orders and delivering them to the customers. 
+- After completing a delivery, the delivery man sends a request to the server containing their ID, the customer's ID, the order ID, the distance traveled in kilometers, and the start and end times of the delivery.
 
-A few details:
+Here are some important points to note:
 
-- Users are using the mobile app, and the API is consumed by that mobile app
-- User can not be both customer and delivery man at the same time. Only one must be chosen at registration
-- The delivery man earns commission for each order. 
-- The delivery man is not allowed to deliver multiple orders at the same time
+- The mobile app is used by the users, and it consumes the API provided by the backend server.
+- A user cannot simultaneously be a customer and a delivery man. They must choose one role during the registration process.
+- The delivery men earn a commission for each order they deliver.
+- Delivery men are not allowed to handle multiple orders simultaneously.
 
-Future Enhancements:
+Features:
 
-- Creating a new API endpoint to display top 3 delivery men who earn the most commission in given time interval, and average commission as well.
-- Notifying Customer support team when a delivery is not done in 45 minutes. With a scheduled task to check and notify CS team asynchronously. (print a message at least)
+- An API endpoint that displays the top three delivery men who have earned the highest commissions within a given time interval, along with the average commission.
+- A notification system to alert the Customer Support team when a delivery is not completed within 45 minutes. This has been achieved through a scheduled task that asynchronously checks and prints a message.
+
+Tried to follow this: https://www.javaguides.net/2018/06/restful-api-design-best-practices.html
+and https://auth0.com/blog/spring-boot-java-tutorial-build-a-crud-api/. Accepted answer is helpful on this one: https://stackoverflow.com/questions/52235902/should-i-use-model-classes-or-payload-classes-to-serialize-a-json-response
 
 # Development Environment:
 
